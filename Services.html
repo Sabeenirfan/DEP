@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+          
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Remove scrollbar */
+    background: linear-gradient(to bottom, rgb(3, 34, 80), rgb(1, 116, 62));
+}
+
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #8dc2fa;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            
+    position: relative;
+    background-color: rgb(165, 233, 207);
+    padding-left: 1px;
+    border: 2px solid rgb(12, 0, 34); /* Add border */
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 95%;
+
+
+}
+.card img {
+    
+    position: relative;
+    top: 20px; /* Adjust this value as needed */
+    width: 70px;
+    height: 55px;
+    margin-bottom: 20px;
+
+}
+
+        .card h2 {
+            font-size: 1.2em; /* Smaller font size */
+            margin-bottom: 10px;
+            color: #13023a;
+            text-decoration: underline;
+        }
+
+        .card p {
+            font-size: 0.9em; /* Smaller font size */
+            color: #0f0533;
+            margin-bottom: 15px; /* Reduced margin */
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr; /* Stack cards on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Development Services</h1>
+        <div class="services">
+            <div class="card">
+                <img src="E:\DEP\FRONTEND.png" alt="front-end Development">
+                <h2>Front-end Development</h2>
+                <p>Hi, I'm Sabeen, a dedicated Front-end developer specializing in front-end development.</p>
+               
+            </div>
+            <div class="card">
+                <img src="E:\DEP\MOBILITY.png" alt="Mobility Services">
+                <h2>Mobility Services</h2>
+                <p>As a web developer, I specialize in creating robust and intuitive mobile applications that enhance user engagement and accessibility. </p>
+                
+            </div>
+            <div class="card">
+                <img src="E:\DEP\software consulting.png" alt="Software Consulting">
+                <h2>Software Consulting</h2>
+                <p>I offer comprehensive software consulting services to help businesses navigate the complexities of software development </p>
+                
+                
+            </div>
+            <div class="card">
+                <img src="E:\DEP\team extension.jfif" alt="Team Extension">
+                <h2>Team Extension</h2>
+                <p>My team extension services are designed to integrate seamlessly with your existing development team.</p>
+              
+            </div>
+            <div class="card">
+                <img src="E:\DEP\application services.jfif" alt="Application Services">
+                <h2>Application Services</h2>
+                <p>In the realm of application services, I focus on developing scalable, secure, and high-performance web applications .</p>
+                
+            </div>
+            <div class="card">
+                <img src="E:\DEP\maintance support.png" alt="Maintenance & Support">
+                <h2>Maintenance & Support</h2>
+                <p> I offer comprehensive maintenance services to ensure that your applications remain up-to-date, secure, and running smoothly.</p>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

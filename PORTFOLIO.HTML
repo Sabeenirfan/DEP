@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex {
+            display: flex;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-contact {
+            background: linear-gradient(to bottom, rgb(3, 34, 80) , black);
+            color: rgb(151, 228, 247);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn-CV {
+            background: linear-gradient(to bottom, rgb(3, 34, 80) , black);
+            color: rgb(136, 208, 236);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensure no margin on the body */
+    padding: 0; /* Ensure no padding on the body */
+    box-sizing: border-box;
+    overflow: hidden; /* Add this line to remove the scrollbar */
+}
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+        nav {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    background: rgb(2, 11, 63); /* Background color */
+    padding: 10px 20px; /* Add some padding */
+}
+
+        .nav {
+    display: flex;
+    justify-content: space-between; /* Use this for spacing */
+    width: 100%;
+    background: rgb(255, 255, 255),
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust this value as needed for spacing */
+    margin-right: 50px; /* Add right margin for spacing */
+}
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover;
+        }
+        nav a {
+            text-decoration: none;
+            color: #7fdaeb;
+            margin: 0 10px;
+        }
+        .avatar {
+            padding: 20px;
+            
+            background: linear-gradient(to bottom, rgb(3, 34, 80), rgb(1, 116, 62));
+            height: 100vh; /* Add this line for full-screen height */
+            width: 100%;
+        }
+        .avatar img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #050230;
+        }
+        h6 {
+            font-size: 1em;
+            margin: 0;
+              color: #8298db;
+        }
+        p {
+    font-size: 1em; /* Increase font size */
+    line-height: 1.8; /* Increase line height */
+    margin: 20px 100px;
+    color: #7fdaeb;
+    padding: 5 20px; /* Add padding to the sides */
+    max-width: 700px; /* Set a maximum width */
+    text-align: justify;
+    
+}
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+    margin-right: 100px;
+    width: 250px; /* Set width */
+    height: 250px; /* Set height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+}
+.btn-contact:hover, .btn-CV:hover {
+    background: linear-gradient(to bottom, rgb(3, 34, 80), grey);
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+nav a:hover {
+    
+    color: #c8e4df; /* Change the color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for transform and color change */
+}
+
+
+    </style>
+</head>
+<body>  
+    <div class="container">  
+        <nav class="flex items-center justify-between">  
+            <div class="left flex">  
+                <div class="logo">  
+                    <img src="E:\DEP\portfolio.jfif" width="50px" alt="logo">  
+                </div>  
+                <div>  
+                    <a href="PORTFOLIO.HTML">Home</a>  
+                    <a href="PORTFOLIO.HTML">About</a>  
+                    <a href="Services.html">Services</a>  
+                    <a href="Skills.html">Skills</a>  
+                    <a href="#">More</a>  
+                </div>  
+            </div>  
+            <div class="right">    
+                <a href="Contact.html"><button class="btn-contact">Contact</button></a>
+                
+            </div>  
+        </nav>
+    </div>  
+    <div class="avatar">
+        <div class="profile">
+            <img src="E:/DEP/avatar.jpg" alt="Profile" width="250px" height="250px">
+            <div>
+                <br>
+                <h6>Sabeen Irfan</h6>
+                <br>
+                <br>
+                <h1>I'm a Web<br> <span>Developer</span></h1>
+                <p>Hi, Im Sabeen, a passionate and dedicated web developer with a keen eye for detail and a drive to create seamless, user-friendly web experiences. With a solid foundation in both front-end and back-end development, I bring a comprehensive approach to every project, ensuring that the final product is not only visually appealing but also robust and efficient. </p>
+                <div>
+                    <a href="file:///E:/CV%20%20FA22.pdf"><button class="btn-CV">DOWNLOAD CV</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
