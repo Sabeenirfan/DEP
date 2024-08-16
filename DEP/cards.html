@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Blog</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Your existing styles... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ff5722;
+            overflow: hidden;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #e64a19;
+            color: white;
+        }
+
+        /* Content */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px); /* 5 cards per row */
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Increased height for larger images */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+    position: relative; /* Relative positioning for icons */
+}
+        .card-content h3 {
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            margin: 0 0 10px;
+        }
+
+        .card-icons {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: white; /* White background to separate from the image */
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-icons i {
+    color: #ff5722;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.card-icons i:hover {
+    color: #e64a19;
+}
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#create">Create Blog Post</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Featured Recipes</h2>
+        <div class="cards">
+            <!-- Card 1 -->
+          <!-- Card 1 -->
+<div class="card">
+    <img src="pasta.jpg" alt="Recipe 1">
+    <div class="card-content">
+        <h3>Pasta</h3>
+        <p>Creamy and delicious pasta tossed in a rich Alfredo sauce, garnished with fresh herbs.</p>
+    </div>
+    <div class="card-icons">
+        <i class="fas fa-edit" title="Update"></i>
+        <i class="fas fa-trash-alt" title="Delete"></i>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+    <img src="pizza.jfif" alt="Recipe 2">
+    <div class="card-content">
+        <h3>Pizza</h3>
+        <p>A classic Italian pizza topped with gooey mozzarella cheese, fresh tomatoes, and basil.</p>
+    </div>
+    <div class="card-icons">
+        <i class="fas fa-edit" title="Update"></i>
+        <i class="fas fa-trash-alt" title="Delete"></i>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card">
+    <img src="brownie.jfif" alt="Recipe 3">
+    <div class="card-content">
+        <h3>Brownie</h3>
+        <p>Rich and fudgy chocolate brownie with a gooey center, perfect for satisfying your sweet tooth.</p>
+    </div>
+    <div class="card-icons">
+        <i class="fas fa-edit" title="Update"></i>
+        <i class="fas fa-trash-alt" title="Delete"></i>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card">
+    <img src="burger.jpg" alt="Recipe 4">
+    <div class="card-content">
+        <h3>Chicken Burger</h3>
+        <p>Crispy chicken fillet topped with lettuce, mayo, and pickles, served in a toasted bun.</p>
+    </div>
+    <div class="card-icons">
+        <i class="fas fa-edit" title="Update"></i>
+        <i class="fas fa-trash-alt" title="Delete"></i>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card">
+    <img src="chocolate shake.jfif" alt="Recipe 5">
+    <div class="card-content">
+        <h3>Chocolate Shake</h3>
+        <p>A thick and creamy chocolate shake topped with whipped cream and chocolate shavings.</p>
+    </div>
+    <div class="card-icons">
+        <i class="fas fa-edit" title="Update"></i>
+        <i class="fas fa-trash-alt" title="Delete"></i>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Cooking Blog. All rights reserved.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ff5722;
+            overflow: hidden;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+    justify-content: center;
+        }
+
+        .navbar a {
+            float: left;
+            color: rgb(92, 20, 20);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #e64a19;
+            color: rgb(8, 1, 1);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('Cuisine-food-Blog.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Content */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#create">Create Blog Post</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Cooking Blog</h1>
+        <p>Discover delicious recipes and cooking tips</p>
+        <button onclick="window.location.href='#create';">Start Cooking</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Featured Recipes</h2>
+        <p>
+            Explore a variety of recipes from around the world. Whether you're a beginner or an experienced chef, you'll find something to suit your taste!
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Cooking Blog. All rights reserved.
+    </div>
+</body>
+
+</html>
